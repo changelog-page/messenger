@@ -1,0 +1,42 @@
+{
+    "name": "changelog/messenger",
+    "description": "TBD",
+    "keywords": [
+        "changelog",
+        "messenger"
+    ],
+    "homepage": "https://github.com/changelog-page/messenger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Changelog\\Messenger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Changelog\\Messenger\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix ./"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
